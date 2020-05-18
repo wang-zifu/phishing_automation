@@ -48,9 +48,3 @@ def my_public_ip():
     return f'Resolving my public ip address: {ip}\n'
 
 print(my_public_ip())
-
-    
-    
-    
-    
-    
