@@ -43,8 +43,8 @@ print(f'Opening web brwoser {open_webbrowser()}\n')
 # ip_address = get("https://api.ipify.org/?format=json").json()['ip']
 # print(ip_address)
 
-def my_public_ip():
-    ip = get('https://api.ipify.org').text
-    return f'Resolving my public ip address: {ip}\n'
+# def my_public_ip():
+#     ip = get('https://api.ipify.org').text
+#     return f'Resolving my public ip address: {ip}\n'
 
-print(my_public_ip())
+# print(my_public_ip())
