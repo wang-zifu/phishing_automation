@@ -46,7 +46,7 @@ if __name__ == '__main__':
 
 # def read_email_from_outlook():
 #         mail = imaplib.IMAP4_SSL('imap-mail.outlook.com')
-#         mail.login('koguname@hotmail.com','61577Oguname')
+#         mail.login('test@hotmail.com','password')
 #         mail.select('inbox')
 
 #         result, data = mail.search(None, 'ALL')
