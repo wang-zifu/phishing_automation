@@ -3,7 +3,7 @@ from requests import get
 import webbrowser
 import socket
 
-
+       
 # def get_nmap(options, url):
 #     command = "nmap " + options + " " + url
 #     process = os.popen(command)
@@ -17,28 +17,54 @@ print("\nScanning website now........... please wait this may take a few minutes
 # print(my_socket)
 
 def open_webbrowser():
-    browser = webbrowser.open('https://lookup.icann.org/')
-    return browser
+    icann = webbrowser.open('https://lookup.icann.org/')
+    return f'Opening Icaan Domain Name Registration Data Lookup analysis tool {icann}\n'
 
 def url_malware():
-    browser = webbrowser.open('https://urlfiltering.paloaltonetworks.com/')
-    return browser
+    paloalto = webbrowser.open('https://urlfiltering.paloaltonetworks.com/')
+    return f'Opening Palo Alto Malware analysis tool {paloalto}\n'
 
-print(f'Opening Malware analysis database {url_malware()}\n')
 
 def malware_analysis():
-    malware_database = webbrowser.open('https://mxtoolbox.com/blacklists.aspx')
-    return malware_database
-    
-print(f'Opening Malware analysis database {malware_analysis()}\n')
+    mxtoolbox = webbrowser.open('https://mxtoolbox.com/blacklists.aspx')
+    return f'Opening MXtool Malware analysis blacklist tool {mxtoolbox}\n'
+
 
 def malware_analysis_1():
-    malware_domain = webbrowser.open('https://zulu.zscaler.com/')
-    return malware_domain
-    
-print(f'Opening Malware analysis web brwoser {malware_analysis_1()}\n')
+    zscaler = webbrowser.open('https://zulu.zscaler.com/')
+    return f'Opening ZScaler URL Risk Analyzer tool {zscaler}\n'
 
-print(f'Opening web brwoser {open_webbrowser()}\n')
+def zvelo_analysis():
+    zvelo = webbrowser.open('https://tools.zvelo.com/')
+    return f'Opening Zvelo analysis tool {zvelo}\n'
+
+def sucuri_site_analysis():
+    sucuri = webbrowser.open('https://sitecheck.sucuri.net/?cjevent=9da4528d9de911ea80f603500a240611&cj_aid=13948096&cj_pid=8092889&cj_cid=4761150')
+    return f'Opening Sucuri site analysis tool {sucuri}\n'
+
+def upguard_analysis():
+    upguard = webbrowser.open('https://webscan.upguard.com/')
+    return f'Opening Upguard analysis tool {upguard}\n'
+
+def siteguarding_analysis():
+    siteguarding = webbrowser.open('https://www.siteguarding.com/en')
+    return f'Opening Siteguarding analysis tool {siteguarding}\n'
+
+print(malware_analysis())
+
+print(malware_analysis_1())
+    
+print(url_malware())
+
+print(open_webbrowser())
+
+print(zvelo_analysis())
+
+print(sucuri_site_analysis())
+
+print(upguard_analysis())
+
+print(siteguarding_analysis())
 
 # ip_address = get("https://api.ipify.org/?format=json").json()['ip']
 # print(ip_address)
@@ -47,4 +73,4 @@ print(f'Opening web brwoser {open_webbrowser()}\n')
 #     ip = get('https://api.ipify.org').text
 #     return f'Resolving my public ip address: {ip}\n'
 
-# print(my_public_ip())
+# print(my_public_ip())`
